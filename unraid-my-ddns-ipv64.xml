@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>ddns-ipv64-update</Name>
+  <Name>ddns-ipv64-updater</Name>
   <Repository>alcapone1933/ddns-ipv64:latest</Repository>
   <Registry>https://hub.docker.com/r/alcapone1933/ddns-ipv64</Registry>
   <Network>bridge</Network>
@@ -9,7 +9,8 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/alcapone1933/docker-ddns-ipv64</Project>
-  <Overview>#### DDNS Updater in Docker f&#xFC;r Free DynDNS IPv64.net (https://ipv64.net/) - NUR F&#xDC;R IPV4 -&#xD;
+  <ReadMe/>
+  <Overview>#### DDNS Updater in Docker f&#xFC;r Free DynDNS IPv64.net (https://ipv64.net/) - NUR F&#xDC;R IPV4 -&#13;
 </Overview>
   <Category>Cloud: Network:DNS</Category>
   <WebUI/>
@@ -18,11 +19,11 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1720075969</DateInstalled>
+  <DateInstalled>1766246511</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Appdata" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Appdata" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ddns-ipv64-updater/</Config>
   <Config Name="TZ" Target="TZ" Default="Europe/Berlin" Mode="" Description="Zeitzone" Type="Variable" Display="always" Required="true" Mask="false">Europe/Berlin</Config>
   <Config Name="CRON_TIME" Target="CRON_TIME" Default="*/15 * * * *" Mode="" Description="Zeitliche Abfrage f&#xFC;r die aktuelle IP" Type="Variable" Display="always" Required="true" Mask="false">*/15 * * * *</Config>
   <Config Name="CRON_TIME_DIG" Target="CRON_TIME_DIG" Default="*/30 * * * *" Mode="" Description="Zeitliche Abfrage auf die Domain (dig DOMAIN_IPV64 A)" Type="Variable" Display="always" Required="true" Mask="false">*/30 * * * *</Config>
@@ -37,4 +38,5 @@
   <Config Name="NETWORK_CHECK" Target="NETWORK_CHECK" Default="yes|no" Mode="" Description="Es wird die Verbidung zu ipv64.net getestet" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
   <Config Name="PUID" Target="PUID" Default="0" Mode="" Description="Rechte f&#xFC;r Benutzer-ID des Ornder /data im Container" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="0" Mode="" Description="PGID: Rechte f&#xFC;r Gruppen-ID des Ornder /data im Container" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <TailscaleStateDir/>
 </Container>
